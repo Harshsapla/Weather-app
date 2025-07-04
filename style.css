@@ -26,3 +26,9 @@ img{
     
 
 }
+.container-section{
+ padding-top: px;
+ height: 300px;
+ width: 300px;
+ background-color:#B0BEC5 ;
+}
