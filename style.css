@@ -1,55 +1,107 @@
-*{
- padding: 0px;
- margin: 0px;
- box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#weather-app{
-    color: #ECEFF1;
-    text-align: center;
-    font-size: 42px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+/* Navbar */
+#navbar {
+  background-color: #2C3E50;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
-#navbar{
-    background-color:#2C3E50;
+
+#weather-app {
+  color: #ECEFF1;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-#unorderd-list{
-    color: #ECEFF1;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-padding-left: 12px;    gap: 40px;
-    display: flex;
-    font-size: large;
-    list-style: none;
+
+#unorderd-list {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  color: #ECEFF1;
+  font-size: 1rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-img{
-    height: 100vh;
-    width: 100%;
-    display: block;
+
+/* Main Image */
+#image1 {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
 }
-.container-section{
-     position: absolute;
-      top: 29%;
-      right: 39%;
-      background-color:#b1c3cc;
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
- /* padding-top: px;
- height: 300px;
- width: 300px;
- background-color:#b1c3cc ; */
+
+/* Layout */
+.main-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.main-section{
-    position: relative;
-      width: 100%;
-      max-width: 100%;
+
+/* Search + Weather Box */
+.container-section {
+  background-color: #b1c3cc;
+  padding: 1.5rem;
+  margin-top: -100px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
 }
+
 .container-section input,
-    .container-section button {
-        color: #1A1F23;
-        background-color: #5EC6C9;
-      margin: 5px 0;
-      padding: 8px;
-    }
+.container-section button {
+  width: 100%;
+  margin: 0.5rem 0;
+  padding: 0.6rem;
+  font-size: 1rem;
+  background-color: #5EC6C9;
+  border: none;
+  border-radius: 5px;
+  color: #1A1F23;
+}
+
+/* Weather Info */
+.weather-box {
+  margin-top: 1rem;
+  background-color: #ffffff;
+  color: #333;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.weather-box img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Hide when not needed */
 .hidden {
   display: none;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  #navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #unorderd-list {
+    gap: 1rem;
+    padding-top: 0.5rem;
+    flex-direction: column;
+  }
+
+  .container-section {
+    margin-top: 1rem;
+  }
 }

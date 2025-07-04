@@ -1,43 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="body" id="body">
-    <main class="main" id="main">
-        <nav id="navbar">        <h1 id="weather-app"> 🌞Weather App </h1>
-            <ul id="unorderd-list">
-                <li>HOME</li>
-                <li>DASHBOARD</li>
-                <li>SETTING</li>
+<body id="body" class="body">
 
-            </ul>
-</nav>
-<div class="main-section" id="main-section">
-   <img id="image1" src="assets/pexels-pixabay-209831.jpg" alt="WEATHER photo">
-   <div class="container-section" id="container-section">
-    <input  class=input-btn id="input-btn" type="text" placeholder="Enter City Name" required>
-    <p id="preview-box" class="preview-box"></p>
-    <div id="weather-box" class="weather-box hidden">
-  <h2 id="city-name"></h2>
-  <img id="weather-icon" alt="nothing"/>
-  <p id="temperature"></p>
-  <p id="condition"></p>
-  <p id="humidity"></p>
-  <p id="wind"></p>
-</div>
+  <main id="main" class="main">
+    <!-- Navbar -->
+    <nav id="navbar">
+      <h1 id="weather-app">🌞 Weather App</h1>
+      <ul id="unorderd-list">
+        <li>HOME</li>
+        <li>DASHBOARD</li>
+        <li>SETTING</li>
+      </ul>
+    </nav>
 
-    <button class="search-btn" id="search-btn" type="submit">Search</button>
-   </div>
+    <!-- Main Section -->
+    <div id="main-section" class="main-section">
+      <img
+        id="image1"
+        src="assets/pexels-pixabay-209831.jpg"
+        alt="Weather photo"
+      />
 
-</div>
+      <div id="container-section" class="container-section">
+        <!-- Search input -->
+        <input
+          id="input-btn"
+          class="input-btn"
+          type="text"
+          placeholder="Enter City Name"
+          required
+        />
 
+        <!-- Live typing preview -->
+        <p id="preview-box" class="preview-box"></p>
 
-    </main>
-    <script src="app.js"></script>
-    
+        <!-- Weather box (hidden by default) -->
+        <div id="weather-box" class="weather-box hidden">
+          <h2 id="city-name"></h2>
+          <img id="weather-icon" alt="Weather icon" />
+          <p id="temperature"></p>
+          <p id="condition"></p>
+          <p id="humidity"></p>
+          <p id="wind"></p>
+        </div>
+
+        <!-- Search button -->
+        <button id="search-btn" class="search-btn" type="submit">Search</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
 </body>
 </html>
