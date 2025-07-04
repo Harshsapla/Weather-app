@@ -19,14 +19,25 @@
 <div class="main-section" id="main-section">
    <img id="image1" src="assets/pexels-pixabay-209831.jpg" alt="WEATHER photo">
    <div class="container-section" id="container-section">
-    <input  class=search-input type="text" placeholder="search" required>
-    <button class="submit-btn" type="submit">Search</button>
+    <input  class=input-btn id="input-btn" type="text" placeholder="Enter City Name" required>
+    <p id="preview-box" class="preview-box"></p>
+    <div id="weather-box" class="weather-box hidden">
+  <h2 id="city-name"></h2>
+  <img id="weather-icon" alt="nothing"/>
+  <p id="temperature"></p>
+  <p id="condition"></p>
+  <p id="humidity"></p>
+  <p id="wind"></p>
+</div>
+
+    <button class="search-btn" id="search-btn" type="submit">Search</button>
    </div>
 
 </div>
 
 
     </main>
+    <script src="app.js"></script>
     
 </body>
 </html>
