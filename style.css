@@ -23,10 +23,28 @@ padding-left: 12px;    gap: 40px;
 img{
     height: 100vh;
     width: 100%;
+    display: block;
 }
 .container-section{
- padding-top: px;
+     position: absolute;
+      top: 29%;
+      right: 39%;
+      background-color:#b1c3cc;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+ /* padding-top: px;
  height: 300px;
  width: 300px;
- background-color:#b1c3cc ;
+ background-color:#b1c3cc ; */
 }
+.main-section{
+    position: relative;
+      width: 100%;
+      max-width: 100%;
+}
+.container-section input,
+    .container-section button {
+      margin: 5px 0;
+      padding: 8px;
+    }
