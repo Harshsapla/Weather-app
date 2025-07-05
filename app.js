@@ -31,7 +31,7 @@ searchbtn.addEventListener("click", () => {
     return;
   }
 
-  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityname}&appid=${API_KEY}`;
 
   fetch(apiUrl)
     .then(response => {
