@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Weather App</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
-<body id="body" class="body">
+<body id="body">
 
   <main id="main" class="main">
     <!-- Navbar -->
@@ -21,26 +23,15 @@
 
     <!-- Main Section -->
     <div id="main-section" class="main-section">
-      <img
-        id="image1"
-        src="assets/pexels-pixabay-209831.jpg"
-        alt="Weather photo"
-      />
+      <img id="image1" src="assets/pexels-pixabay-209831.jpg" alt="Weather photo" />
 
       <div id="container-section" class="container-section">
-        <!-- Search input -->
-        <input
-          id="input-btn"
-          class="input-btn"
-          type="text"
-          placeholder="Enter City Name"
-          required
-        />
+        <input id="input-btn" class="input-btn" type="text" placeholder="Enter City Name" required />
+        <button id="search-btn" class="search-btn" type="submit">Search</button>
 
-        <!-- Live typing preview -->
         <p id="preview-box" class="preview-box"></p>
+        <div id="loading" class="hidden">Loading...</div>
 
-        <!-- Weather box (hidden by default) -->
         <div id="weather-box" class="weather-box hidden">
           <h2 id="city-name"></h2>
           <img id="weather-icon" alt="Weather icon" />
@@ -49,9 +40,6 @@
           <p id="humidity"></p>
           <p id="wind"></p>
         </div>
-
-        <!-- Search button -->
-        <button id="search-btn" class="search-btn" type="submit">Search</button>
       </div>
     </div>
   </main>
